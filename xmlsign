@@ -1,0 +1,5 @@
+#!/bin/sh
+
+BASEDIR=`dirname $0`
+CLASSPATH=$BASEDIR/bin/:$BASEDIR/lib/bcprov-jdk16-146.jar
+java -classpath $CLASSPATH XmlSigner $1 $2
